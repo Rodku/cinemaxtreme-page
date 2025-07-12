@@ -1,0 +1,163 @@
+$witheTex: #ffffff;
+$generalText: #D8DADF;
+$mainColor: #FF2453;
+$mainColorHover: #c8083f;
+$surfacegray: #4A4D5A;
+$outlinelight: #5A5F6F;
+$outlineInput: #383A42;
+$mainFont: "Lato", sans-serif;
+$mainbg: #25262c;
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == lg {
+        @media(max-width: 1240px) {@content;}
+    } @else if $breakpoint == md {
+        @media(max-width: 1240px) {@content;}
+    } @else if $breakpoint == sm {
+        @media(max-width: 700px) {@content;}
+    }
+}
+
+.button_secondary {
+    appearance: none;
+    border: none;
+    outline:  1px solid $witheTex;
+    color: $witheTex;
+    background-color: transparent;
+    font-size: 14px;
+    padding: 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    line-height: 1.5715;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $witheTex;
+        color: $mainColor;
+    }
+}
+
+.email__imput {
+    display: flex;
+    position: relative;
+    align-items: center;
+    
+    @include respond-to(sm){
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .email__icon {
+        position: absolute;
+        margin-left: 24px;
+
+        @include respond-to(sm){
+            left: 0;
+            margin-top: 16px;
+            
+        }
+    }
+
+    .input {
+
+        padding: 16px 24px 16px 54px;
+        border: none;
+        outline: 1px solid $surfacegray;
+        background-color: $outlineInput;
+        border-radius: 8px 0 0 8px;
+        line-height: 1.44;
+        width: 352px;
+        color: $generalText;
+        font-size: 14px;
+
+        @include respond-to(sm){
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+    }
+
+    .button_primary {
+        appearance: none;
+        border: none;
+        outline: none;
+        color: $witheTex;
+        background-color: $mainColor;
+        font-size: 14px;
+        padding: 16px;
+        border-radius: 0 8px 8px 0;
+        font-weight: 600;
+        line-height: 1.5715;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        cursor: pointer;
+
+        @include respond-to(sm){
+            width: 100%;
+            justify-content: center;
+            border-radius: 0 0 8px 8px;
+        }
+        &:hover {
+            background-color: $mainColorHover;
+        }
+    
+    }
+
+}
+
+.subtitle-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    span {
+        font-size: 24px;
+        font-weight: 400;
+        color: $mainColor;
+    }
+
+    h2 {
+        font-size: 32px;
+        color: $generalText;
+        font-weight: 800;
+    }
+}
+
+
+
+.card__single-templante {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 16px;
+    background: linear-gradient(
+    135deg,
+    rgba(255, 36, 83, 0.16),
+    rgba(56, 58, 66, 0.40)
+    );
+
+    .icon-info {
+        width: 137px;
+    }
+
+    .card__description {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h3 {
+            color: $generalText;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        span {
+            color: $generalText;
+            font-size: 18px;
+            font-weight: 300;
+        }
+    }
+
+  
+}
