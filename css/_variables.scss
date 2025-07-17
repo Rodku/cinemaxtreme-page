@@ -110,13 +110,13 @@ $mainbg: #25262c;
     flex-direction: column;
     gap: 16px;
 
-    span {
+    h2 {
         font-size: 24px;
         font-weight: 400;
         color: $mainColor;
     }
 
-    h2 {
+    h3 {
         font-size: 32px;
         color: $generalText;
         font-weight: 800;
@@ -146,7 +146,7 @@ $mainbg: #25262c;
         flex-direction: column;
         gap: 20px;
 
-        h3 {
+        h4 {
             color: $generalText;
             font-size: 24px;
             font-weight: 800;

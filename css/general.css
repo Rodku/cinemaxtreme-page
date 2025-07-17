@@ -90,12 +90,12 @@
   flex-direction: column;
   gap: 16px;
 }
-.subtitle-text span {
+.subtitle-text h2 {
   font-size: 24px;
   font-weight: 400;
   color: #FF2453;
 }
-.subtitle-text h2 {
+.subtitle-text h3 {
   font-size: 32px;
   color: #D8DADF;
   font-weight: 800;
@@ -117,7 +117,7 @@
   flex-direction: column;
   gap: 20px;
 }
-.card__single-templante .card__description h3 {
+.card__single-templante .card__description h4 {
   color: #D8DADF;
   font-size: 24px;
   font-weight: 800;
@@ -455,7 +455,7 @@ main .body__container .section__container .frecuent__question .general__question
   padding: 16px;
   border-bottom: 1px solid #5A5F6F;
 }
-main .body__container .section__container .frecuent__question .general__questions .question p {
+main .body__container .section__container .frecuent__question .general__questions .question h4 {
   color: #D8DADF;
   font-size: 18px;
   font-weight: 600;
